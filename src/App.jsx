@@ -3,6 +3,7 @@ import HomePage from "./components/HomePage";
 import CategorizePage from "./components/CategorizePage";
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import AddTaskPage from "./components/AddTaskPage";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
   {
     path: "/categorize",
     element: <CategorizePage />,
+  },
+  {
+    path: "/add-task",
+    element: <AddTaskPage />,
   },
 ]);
 
